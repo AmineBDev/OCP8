@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(../assets/fonts/Poppins-Medium.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(../assets/fonts/Poppins-Light.ttf);
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(../assets/fonts/Poppins-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(../assets/fonts/Poppins-Bold.ttf);
+    font-weight: 700; 
+    font-style: normal;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(../assets/fonts/Poppins-SemiBold.ttf);
+    font-weight: 600; 
+    font-style: normal;
+}
+
+
+// ajoute couleur par defaut, ex : $color-1: black
+$black-title: #2d2e32;
+$black-font: #555;
+$color-1: rgb(95, 187, 194);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    color: $black-title;
+
+    ::selection {
+        background-color: $color-1;
+        color: #FFFFFF;
+    }
+}
+
+li {
+    list-style: none;
+}

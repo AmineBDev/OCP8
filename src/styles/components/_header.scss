@@ -1,0 +1,30 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    padding: 0 25px 0 95px;
+    height: 10vh;
+    
+
+    ul {
+        display: flex;
+        gap: 60px;
+        color: #6c6f79;
+
+        li {
+            cursor: pointer;
+            font-weight: 500;
+            transition: 0.3s;
+
+            &:hover {
+                color: $color-1;
+            }
+        }
+    }
+
+    h2 {
+        font-weight: 600;
+    }
+    
+}
