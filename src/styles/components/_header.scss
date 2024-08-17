@@ -3,14 +3,15 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 65%;
-    padding: 0 25px 0 95px;
+    padding: 0 25px 0 105px;
     height: 10vh;
+    color: white;
     
 
     ul {
         display: flex;
         gap: 60px;
-        color: #6c6f79;
+        color: $grey-font;
 
         li {
             cursor: pointer;
@@ -18,7 +19,7 @@ header {
             transition: 0.3s;
 
             &:hover {
-                color: $color-1;
+                color: $color-2;
             }
         }
     }

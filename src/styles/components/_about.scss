@@ -1,0 +1,77 @@
+.about {
+
+    .about-container {
+        max-width: 1450px;
+        margin: auto;
+        padding: 150px 80px;
+        display: flex;
+        align-items: center;
+        gap: 130px;
+        
+        .left-about {
+            position: relative;
+            
+            img {
+                height: 380px;
+                width: 450px;
+                border-radius: 20px;
+            }
+            
+            .circle-dev {
+                position: absolute;
+                height: 195px;
+                width: 195px;
+                bottom: -40px;
+                left: 300px;
+                border-radius: 50%;
+                background: white;
+
+                
+                .circleword {
+                    width: 175px;
+                    height: 175px;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    animation: rotate 12s linear infinite;
+
+                    @keyframes rotate {
+                    100% {
+                        transform: rotate(1turn);
+                    }
+                }
+                }
+                
+                .emoji {
+                    width: 65px;
+                    height: 65px;
+                    position: absolute;
+                    top: 60px;
+                    left: 65px;
+                }
+            }
+        }
+
+        .right-about {
+
+            h3 {
+                text-transform: uppercase;
+                color: $color-1;
+            }
+
+            h2 {
+                padding: 10px 0 20px;
+                color: $black-title;
+            }
+
+            p {
+                color: $black-font;
+
+                a {
+                    color: rgb(120, 103, 175);
+                }
+            }
+        }
+    }
+}

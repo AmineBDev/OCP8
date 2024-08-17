@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import Presentation from '../components/Presentation';
+import About from '../components/About';
 
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
         <>
             <Header />
             <Presentation />
+            <About />
         </>
     );
 };

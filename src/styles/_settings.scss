@@ -32,8 +32,11 @@
 
 // ajoute couleur par defaut, ex : $color-1: black
 $black-title: #2d2e32;
-$black-font: #555;
-$color-1: rgb(95, 187, 194);
+$black-font: #747474;
+$grey-font: rgb(224, 224, 224);
+$color-1: rgb(12, 142, 146);
+$color-2: rgb(235, 205, 151);
+// rgb(42, 131, 131)
 
 
 * {
@@ -41,18 +44,26 @@ $color-1: rgb(95, 187, 194);
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: grey white;
 }
 
 body {
     font-family: "Poppins", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     color: $black-title;
+    overflow-x: hidden;
 
     ::selection {
-        background-color: $color-1;
+        background-color: $color-2;
         color: #FFFFFF;
-    }
-}
+    } 
 
-li {
-    list-style: none;
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
 }
