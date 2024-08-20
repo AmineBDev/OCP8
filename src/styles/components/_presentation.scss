@@ -51,14 +51,14 @@
     .presentation-right {
 
       .circle-main {
-        height: 2500px;
-        width: 2500px;
-        border-radius: 45%;
+        height: 2300px;
+        width: 2050px;
+        border-radius: 50%;
         background: $color-1;
         position: absolute;
         z-index: -1;
-        top: -1580px;
-        right: 490px;
+        top: -1460px;
+        right: 440px;
       }
     }
   }
@@ -74,4 +74,15 @@
 //   z-index: -1;
 //   top: -100px;
 //   right: -450px;
+// }
+
+// .circle-main {
+//   height: 2500px;
+//   width: 2000px;
+//   border-radius: 50%;
+//   background: $color-1;
+//   position: absolute;
+//   z-index: -1;
+//   top: -1680px;
+//   right: 450px;
 // }
