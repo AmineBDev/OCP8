@@ -5,6 +5,7 @@ import About from '../components/About';
 // import Competences from '../components/Competences';
 import Technologies from '../components/Technologies';
 import Hooks from '../components/Hooks';
+import Projects from '../components/Projects';
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
             <About />
             <Hooks />
             {/* <Competences /> */}
+            <Projects />
         </>
     );
 };

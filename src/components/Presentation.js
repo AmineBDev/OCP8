@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import happymen from '../assets/img/hero-1.png'
+// import happymen from '../assets/img/hero-1.png'
 
 const Presentation = () => {
     const [currentText, setCurrentText] = useState('');
@@ -41,7 +41,7 @@ const Presentation = () => {
                 </div>
                 <div className="presentation-right">
                     <div className="circle-main"></div>
-                    <img src={happymen} alt="Illustration d'un développeur" />
+                    <img src="./assets/img/hero-1.png" alt="Illustration d'un développeur" />
                 </div>
             </div>
         </section>

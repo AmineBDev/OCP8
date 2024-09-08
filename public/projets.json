@@ -1,13 +1,79 @@
 [
     {
-        "title": "Kasa",
-        "description": "",
-        "image": "",
+        "title": "KASA 🏠",
+        "description": "Vous êtes un développeur front-end freelance engagé par Kasa, une entreprise de location d'appartements entre particuliers, pour une refonte complète de leur site web en React. Le projet implique de créer une nouvelle interface utilisateur basée sur des maquettes Figma.",
+        "image": "./assets/img/projets/kasa.webp",
         "tech": [
-            "React", "Sass"
+            "Front-End", "React", "Sass"
         ],
         "type": "Projet OpenClassrooms",
-        "git": "https",
-        "link": "https"
+        "git": "https://github.com/AmineBDev/OCP5",
+        "link": "https://kasa-aminebdev.netlify.app"
+    },
+    {
+        "title": "SOPHIE BLUEL 📷",
+        "description": "Vous rejoignez l'équipe de l'agence ArchiWebos en tant que développeur front-end pour aider à la création du site portfolio d'une architecte d'intérieur. Votre mission consiste à développer la page de présentation des travaux de l'architecte, créer une page de connexion pour l'administrateur, et concevoir une modale pour uploader de nouveaux médias, en vous appuyant sur les ressources et codes fournis.",
+        "image": "./assets/img/projets/sophiebluel.webp",
+        "tech": [
+            "Front-End", "Javascript", "Sass"
+        ],
+        "type": "Projet OpenClassrooms",
+        "git": "https://github.com/AmineBDev/OCP3",
+        "link": "https://aminebdev.github.io/OCP3-Front/"
+    },
+    {
+        "title": "BOOKI 🏕️",
+        "description": "Vous débutez votre alternance en tant que développeur web chez Booki, une start-up qui souhaite créer un site pour trouver des hébergements et activités. Votre mission est d'intégrer l'interface du site en HTML et CSS à partir des maquettes fournies par Loïc, l’UI designer. Vous travaillez sous la supervision de Sarah, la CTO, et devez respecter les spécifications techniques.",
+        "image": "./assets/img/projets/booki.webp",
+        "tech": [
+            "Front-End", "HTML", "CSS"
+        ],
+        "type": "Projet OpenClassrooms",
+        "git": "https://github.com/AmineBDev/OCP2",
+        "link": "https://aminebdev.github.io/OCP2/"
+    },
+    {
+        "title": "GAMING CAMPUS",
+        "description": "Recréation de la page d'accueil du site Gaming Campus, en reproduisant fidèlement le design, les animations, et les interactions originales. Ce projet démontre ma capacité à réaliser des interfaces complexes tout en respectant l'esthétique du site d'origine.",
+        "image": "./assets/img/projets/gamingcampus.webp",
+        "tech": [
+            "Front-End", "HTML", "CSS"
+        ],
+        "type": "Projet personnel",
+        "git": "https://github.com/AmineBDev/Gaming-Campus",
+        "link": "https://aminebdev.github.io/Gaming-Campus/"
+    },
+    {
+        "title": "NINA CARDUCCI",
+        "description": "En tant que développeur freelance spécialisé en optimisation SEO, vous avez été engagé par Nina Carducci, une photographe, pour optimiser son site web. Vous allez améliorer ses performances, le SEO, l’accessibilité, et corriger quelques bugs de navigation, tout en produisant un rapport détaillant les actions effectuées.",
+        "image": "./assets/img/projets/ninacarducci.webp",
+        "tech": [
+            "Lighthouse", "Wave"
+        ],
+        "type": "Projet OpenClassrooms",
+        "git": "https://github.com/AmineBDev/OC4-New-Site",
+        "link": "https://aminebdev.github.io/OC4-New-Site/"
+    },
+    {
+        "title": "LE RESTO",
+        "description": "Recréation de la page d'accueil d'un restaurant pour améliorer mes compétences en design web. Ce projet m'a permis de travailler sur l'intégration d'éléments visuels attractifs, tout en mettant en œuvre des techniques de mise en page et de responsive design.",
+        "image": "./assets/img/projets/leresto.webp",
+        "tech": [
+            "Front-End", "HTML", "Sass"
+        ],
+        "type": "Projet personnel",
+        "git": "https://github.com/AmineBDev/Le-resto",
+        "link": "https://aminebdev.github.io/Le-resto/"
+    },
+    {
+        "title": "MON VIEUX GRIMOIRE",
+        "description": "En tant que développeur back-end freelance, vous êtes engagé pour créer l'API d'un site de notation de livres, Mon Vieux Grimoire, en collaboration avec Kévin, un développeur front-end. Vous devez implémenter l'API selon les spécifications fournies, optimiser le traitement des images envoyées par les utilisateurs, et garantir le bon fonctionnement de l'ensemble du site en respectant les bonnes pratiques du Green Code.",
+        "image": "./assets/img/projets/monvieuxgrimoire.webp",
+        "tech": [
+            "Back-End", "Node JS", "Express", "MongoDB"
+        ],
+        "type": "Projet OpenClassrooms",
+        "git": "https://github.com/AmineBDev/OCP6",
+        "link": "https://mon-vieux-grimoire-abdev.netlify.app"
     }
 ]

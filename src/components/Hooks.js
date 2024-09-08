@@ -1,5 +1,5 @@
 import React from 'react';
-import notion from '../assets/img/Notion-logo.svg'
+// import notion from '../assets/img/Notion-logo.svg'
 import CustomSlider from './CustomSlider';
 
 const Hooks = () => {
@@ -10,7 +10,7 @@ const Hooks = () => {
         { icon: "fa-brands fa-github", title: "GitHub" },
         { icon: "fa-brands fa-figma", title: "Figma" },
         { icon: "fa-brands fa-trello", title: "Trello" },
-        { img: notion, title: 'Notion' },
+        { img: "./assets/img/Notion-logo.svg", title: 'Notion' },
     ]
 
     return (
