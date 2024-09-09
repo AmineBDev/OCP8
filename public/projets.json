@@ -34,7 +34,7 @@
     },
     {
         "title": "GAMING CAMPUS",
-        "description": "Recréation de la page d'accueil du site Gaming Campus, en reproduisant fidèlement le design, les animations, et les interactions originales. Ce projet démontre ma capacité à réaliser des interfaces complexes tout en respectant l'esthétique du site d'origine.",
+        "description": "Recréation de la page d'accueil du site Gaming Campus, en reproduisant fidèlement le design. Ce projet démontre ma capacité à réaliser des interfaces complexes tout en respectant l'esthétique du site d'origine.",
         "image": "./assets/img/projets/gamingcampus.webp",
         "tech": [
             "Front-End", "HTML", "CSS"
@@ -67,7 +67,7 @@
     },
     {
         "title": "MON VIEUX GRIMOIRE",
-        "description": "En tant que développeur back-end freelance, vous êtes engagé pour créer l'API d'un site de notation de livres, Mon Vieux Grimoire, en collaboration avec Kévin, un développeur front-end. Vous devez implémenter l'API selon les spécifications fournies, optimiser le traitement des images envoyées par les utilisateurs, et garantir le bon fonctionnement de l'ensemble du site en respectant les bonnes pratiques du Green Code.",
+        "description": "En tant que développeur back-end freelance, vous êtes engagé pour créer l'API d'un site de notation de livres, en collaboration avec Kévin, un développeur front-end. Vous devez implémenter l'API selon les spécifications fournies, optimiser le traitement des images envoyées par les utilisateurs, et garantir le bon fonctionnement de l'ensemble du site en respectant les bonnes pratiques du Green Code.",
         "image": "./assets/img/projets/monvieuxgrimoire.webp",
         "tech": [
             "Back-End", "Node JS", "Express", "MongoDB"
