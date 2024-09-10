@@ -6,6 +6,7 @@ import About from '../components/About';
 import Technologies from '../components/Technologies';
 import Hooks from '../components/Hooks';
 import Projects from '../components/Projects';
+import Contact from '../components/Contact';
 
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
             <Hooks />
             {/* <Competences /> */}
             <Projects />
+            <Contact />
         </>
     );
 };
