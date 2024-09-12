@@ -3,8 +3,6 @@ import Map from './Map';
 
 const Contact = () => {
 
-
-
     return (
         <section className="contact">
             <div className="contact-container">
@@ -19,6 +17,7 @@ const Contact = () => {
                                 <input type="text" name='email' placeholder='Email*' />
                             </div>
                             <textarea name="text" placeholder='Votre message*' ></textarea>
+                            <span id='incorrectForm' style={{ display: 'block', color: 'red' }}></span>
                             <input type="submit" value="ENVOYER LE MESSAGE" />
                         </form>
                     </div>
