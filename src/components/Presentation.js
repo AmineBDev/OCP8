@@ -21,7 +21,7 @@ const Presentation = () => {
     }, []);
 
     return (
-        <section className='presentation'>
+        <section id='presentation'>
             <div className="presentation-main">
                 <div className="presentation-left">
                     <h1>Développeur <br /> Front-End React<span></span></h1>

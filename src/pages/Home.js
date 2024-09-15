@@ -7,6 +7,7 @@ import Technologies from '../components/Technologies';
 import Hooks from '../components/Hooks';
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
             {/* <Competences /> */}
             <Projects />
             <Contact />
+            <Footer />
         </>
     );
 };

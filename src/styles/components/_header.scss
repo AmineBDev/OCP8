@@ -5,7 +5,28 @@ header {
     width: 65%;
     padding: 0 25px 0 105px;
     height: 10vh;
-    color: white;
+    color: white;  
+    
+    &.active {
+        position: sticky;
+        top: -10vh;
+        z-index: 900;
+        width: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .09);  
+        color: $black-title;
+        padding: 0 105px; 
+        transition: 0.4s;
+        
+        &.scroll-head {
+           background: white; 
+           top: 0;
+        }
+
+        ul {
+            color: $black-font;
+        }
+    }
+
     
 
     ul {

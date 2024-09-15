@@ -28,7 +28,7 @@ const Projects = () => {
     };
 
     return (
-        <section className='projects'>
+        <section id='projects'>
             <div className="projects-container">
                 <h3>MES PROJETS</h3>
                 <h2>Chaque projet est une création unique en développement 🧩</h2>

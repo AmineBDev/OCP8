@@ -5,7 +5,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <section className='about'>
+        <section id='about'>
             <div className="about-container">
 
                 <div className="left-about">
@@ -18,7 +18,7 @@ const About = () => {
                 <div className="right-about">
                     <h3>À propos de moi</h3>
                     <h2>Développeur Front-End basé à Nantes, France 📍</h2>
-                    <p>Salut, je m'appelle Amine, 23 ans et j'ai fraîchement été diplômé d'un BAC+2 en développement web chez <a href="https://openclassrooms.com/fr" target="_blank" rel="noopener noreferrer">OpenClassrooms</a> 🎓. Passionné, j'aime créer des sites et des applications qui allient design et fonctionnalité.
+                    <p>Salut, je m'appelle Amine, j'ai 23 ans et j'ai fraîchement été diplômé d'un BAC+2 en développement web chez <a href="https://openclassrooms.com/fr" target="_blank" rel="noopener noreferrer">OpenClassrooms</a> 🎓. Passionné, j'aime créer des sites et des applications qui allient design et fonctionnalité.
                         <br />
                         <br />
                         Ma stack principale est actuellement composée de React, combiné avec Sass pour un design élégant, je possède également de solides bases en Node.js pour le backend.

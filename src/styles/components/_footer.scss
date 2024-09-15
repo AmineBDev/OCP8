@@ -1,0 +1,38 @@
+footer {
+    background: $color-1;
+    color: white;
+    margin-top: 120px;
+
+    .footer-container {
+        max-width: 1450px;
+        margin: auto;
+        padding: 60px 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        i {
+            font-size: 1.6rem;
+            transition: 0.3s;
+            cursor: pointer;
+
+            &:hover {
+                color: $color-2;
+            }
+        }
+
+        .social-footer {
+            display: flex;
+            gap: 25px;  
+        }
+
+        .fa-circle-chevron-up {
+            font-size: 2rem;
+
+            &:hover {
+                transform: translateY(-5px);
+            }
+        }
+
+    }
+}
