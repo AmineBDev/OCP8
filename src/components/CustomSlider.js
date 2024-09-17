@@ -10,7 +10,16 @@ const CustomSlider = ({ items }) => {
         autoplay: true,
         autoplaySpeed: 5000,
         pauseOnHover: true,
-        arrows: false
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 3,
+                    autoplaySpeed: 3000
+                },
+            },
+        ],
     };
 
     return (

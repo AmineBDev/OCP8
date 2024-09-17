@@ -53,6 +53,10 @@ body {
     color: $black-title;
     overflow-x: hidden;
 
+    .about-container, .competences-container, .hooks-container, .contact-container, .footer-container, .presentation-main, .projects-container { 
+        max-width: 1450px;
+    }
+
     ::selection {
         background-color: $color-2;
         color: #FFFFFF;

@@ -1,12 +1,23 @@
 #about {
 
     .about-container {
-        max-width: 1450px;
+        // max-width: 1450px;
         margin: auto;
-        padding: 150px 80px;
+        padding: 150px 40px;
         display: flex;
         align-items: center;
         gap: 130px;
+
+        @media screen and (max-width: 1200px) {
+            gap: 60px;
+        }
+
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
+            text-align: center;
+            padding: 80px 40px;
+        }
+
         
         .left-about {
             position: relative;
@@ -15,6 +26,16 @@
                 height: 380px;
                 width: 450px;
                 border-radius: 20px;
+
+                @media screen and (max-width: 550px) {
+                    height: 300px;
+                    width: 360px;
+                }
+
+                @media screen and (max-width: 450px) {
+                    height: auto;
+                    width: 100%;
+                }
             }
             
             .circle-dev {
@@ -26,6 +47,17 @@
                 border-radius: 50%;
                 background: white;
 
+                @media screen and (max-width: 700px) {
+                    width: 145px;
+                    height: 145px;
+                    left: 320px;
+                    bottom: -30px;
+                }
+
+                @media screen and (max-width: 550px) {
+                    display: none;
+                }
+
                 
                 .circleword {
                     width: 175px;
@@ -35,6 +67,11 @@
                     top: 10px;
                     left: 10px;
                     animation: rotate 12s linear infinite;
+
+                    @media screen and (max-width: 700px) {
+                        width: 125px;
+                        height: 125px;
+                    }
 
                     @keyframes rotate {
                     100% {
@@ -49,6 +86,14 @@
                     position: absolute;
                     top: 60px;
                     left: 65px;
+
+                    @media screen and (max-width: 700px) {
+                        width: 45px;
+                        height: 45px;
+                        top: 50px;
+                        left: 50px;
+                    }
+    
                 }
             }
         }

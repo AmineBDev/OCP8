@@ -4,7 +4,7 @@ import React from 'react';
 const Map = () => {
 
     const mapStyle = {
-        width: '600px',
+        width: '100%',
         height: '450px'
     };
 

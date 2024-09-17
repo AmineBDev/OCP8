@@ -3,9 +3,9 @@
     color: white;
 
     .competences-container, .hooks-container {
-        max-width: 1450px;
+        // max-width: 1450px;
         margin: auto;
-        padding: 20px 80px;
+        padding: 20px 40px;
         text-align: center;
 
         h3 {
@@ -17,11 +17,19 @@
 
             i {
                 font-size: 6rem;
+
+                @media screen and (max-width: 900px) {
+                    font-size: 4rem;
+                }
             }
 
             img {
                 margin: 0 auto;
                 width: 96px;
+
+                @media screen and (max-width: 900px) {
+                    width: 64px;
+                }
             }
 
             .slick-dots {
