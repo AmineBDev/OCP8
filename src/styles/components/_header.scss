@@ -48,10 +48,19 @@ header {
             color: $black-font;
 
             li {
+
+                a {
+                    transition: 0.6s;
+
+                    &.active {
+                        color: $color-1;
+                    }
+                }
                 
                 &:hover {
                     color: $color-1;
                 }
+
             }
         }
     }

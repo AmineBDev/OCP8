@@ -21,6 +21,14 @@
         
         .left-about {
             position: relative;
+            transform: translateX(-80px);
+            opacity: 0;
+
+            &.visible {
+                transform: translateX(0);
+                opacity: 1;
+                transition: all 1s ease-in-out;
+            }
             
             img {
                 height: 380px;
@@ -99,6 +107,14 @@
         }
 
         .right-about {
+            transform: translateX(-120px);
+            opacity: 0;
+
+            &.visible {
+                transform: translateX(0);
+                opacity: 1;
+                transition: all 1.2s ease-in-out 0.5s;
+            }
 
             h3 {
                 text-transform: uppercase;

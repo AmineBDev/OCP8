@@ -18,7 +18,6 @@ const Projects = () => {
             setLoading(false)
         })
 
-
     }, [])
 
     const handleCloseModal = (e) => {

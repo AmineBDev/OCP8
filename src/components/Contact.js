@@ -1,10 +1,31 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Map from './Map';
 import emailjs from 'emailjs-com'
 
 const Contact = () => {
     const form = useRef()
     const [spanForm, setSpanForm] = useState('')
+    const [isVisibleAnim, setIsVisibleAnim] = useState(false)
+    const animRef = useRef(null)
+
+    useEffect(() => {
+        const scrollAnim = () => {
+            if (animRef.current) {
+                const top = animRef.current.getBoundingClientRect().top
+                const windowHeight = window.innerHeight
+
+                if (top < windowHeight - 250) {
+                    setIsVisibleAnim(true)
+                }
+            }
+        }
+
+        window.addEventListener('scroll', scrollAnim)
+
+        return () => {
+            window.removeEventListener('scroll', scrollAnim)
+        }
+    })
 
     const validateEmail = (email) => {
         // Regex pour validation email
@@ -23,10 +44,10 @@ const Contact = () => {
         } else {
             emailjs
                 .sendForm(
-                    'gmail_8xg42pj',
-                    'template_9bb8ydf',
+                    process.env.REACT_APP_EMAILJS_SERVICE_ID,
+                    process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
                     form.current,
-                    'EM1-y2_6Qv_7mHG7G'
+                    process.env.REACT_APP_EMAILJS_USER_ID
                 )
                 .then(() => {
                     console.log('SUCCESS!');
@@ -42,9 +63,9 @@ const Contact = () => {
 
     return (
         <section id="contact">
-            <div className="contact-container">
+            <div className="contact-container" ref={animRef}>
                 <div className="contact-boxes">
-                    <div className="form-contact">
+                    <div className={`form-contact ${isVisibleAnim ? 'visible' : ''}`}>
                         <h3>CONTACT</h3>
                         <h2>N’hésitez pas à me faire signe ! <br />
                             Contactez-moi ! 👇</h2>
@@ -58,7 +79,7 @@ const Contact = () => {
                             <input type="submit" value="ENVOYER LE MESSAGE" />
                         </form>
                     </div>
-                    <div className="map-contact">
+                    <div className={`map-contact ${isVisibleAnim ? 'visible' : ''}`}>
                         <Map />
                     </div>
                 </div>

@@ -2,11 +2,12 @@ import React, { useEffect, useState } from 'react';
 
 const Header = () => {
     const [openMenu, setOpenMenu] = useState(false);
+    const [activeLi, setActiveLi] = useState('');
 
     useEffect(() => {
-        const header = document.getElementById("header");
-
         const handleScroll = () => {
+            const header = document.getElementById("header");
+
             if (window.scrollY > 100) {
                 header.classList.add("active");
             } else {
@@ -20,9 +21,25 @@ const Header = () => {
             }
         };
 
-        window.addEventListener('scroll', handleScroll);
+        const liActive = () => {
+            const sections = document.querySelectorAll('section');
 
-        return () => window.removeEventListener('scroll', handleScroll);
+            sections.forEach((section) => {
+                const top = section.offsetTop - 250;
+
+                if (window.scrollY >= top) {
+                    setActiveLi(section.getAttribute('id'))
+                }
+            })
+        }
+
+        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('scroll', liActive);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('scroll', liActive);
+        };
     }, []);
 
     return (
@@ -33,9 +50,9 @@ const Header = () => {
                     <i class="fa-solid fa-bars" onClick={() => setOpenMenu(true)}></i>
                     <ul>
                         <li><a href="#presentation">Accueil</a></li>
-                        <li><a href="#about">À propos</a></li>
-                        <li><a href="#projects">Projets</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about" className={activeLi === 'about' ? 'active' : ''}>À propos</a></li>
+                        <li><a href="#projects" className={activeLi === 'projects' ? 'active' : ''}>Projets</a></li>
+                        <li><a href="#contact" className={activeLi === 'contact' ? 'active' : ''}>Contact</a></li>
                     </ul>
                 </nav>
             </header>
