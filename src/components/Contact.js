@@ -71,11 +71,18 @@ const Contact = () => {
                             Contactez-moi ! 👇</h2>
                         <form ref={form} onSubmit={sendEmail}>
                             <div className="details-contact">
-                                <input type="text" name='name' placeholder='Nom*' required />
+                                <label htmlFor="name" className="sr-only">Nom</label>
+                                <input type="text" name='name' id="name" placeholder='Nom*' required />
+
+                                <label htmlFor="emailForm" className="sr-only">Email</label>
                                 <input type="text" name='email' id='emailForm' placeholder='Email*' />
                             </div>
-                            <textarea name="message" placeholder='Votre message*' ></textarea>
+
+                            <label htmlFor="message" className="sr-only">Message</label>
+                            <textarea name="message" id="message" placeholder='Votre message*' ></textarea>
+
                             <span style={{ display: spanForm === '' ? 'none' : "block", color: spanForm === 'Votre message a été envoyé avec succès !' ? 'green' : 'red' }}>{spanForm}</span>
+
                             <input type="submit" value="ENVOYER LE MESSAGE" />
                         </form>
                     </div>

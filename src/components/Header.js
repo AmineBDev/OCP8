@@ -8,13 +8,13 @@ const Header = () => {
         const handleScroll = () => {
             const header = document.getElementById("header");
 
-            if (window.scrollY > 100) {
+            if (window.scrollY > 20) {
                 header.classList.add("active");
             } else {
                 header.classList.remove("active");
             }
 
-            if (window.scrollY > 300) {
+            if (window.scrollY > 400) {
                 header.classList.add("scroll-head");
             } else {
                 header.classList.remove("scroll-head");
