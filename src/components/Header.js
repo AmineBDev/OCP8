@@ -47,7 +47,7 @@ const Header = () => {
             <header id='header'>
                 <h2>Amine.dev</h2>
                 <nav>
-                    <i class="fa-solid fa-bars" onClick={() => setOpenMenu(true)}></i>
+                    <i className="fa-solid fa-bars" onClick={() => setOpenMenu(true)}></i>
                     <ul>
                         <li><a href="#presentation">Accueil</a></li>
                         <li><a href="#about" className={activeLi === 'about' ? 'active' : ''}>À propos</a></li>
@@ -58,7 +58,7 @@ const Header = () => {
             </header>
             <div className={`header-mobile ${openMenu ? 'open' : 'close'}`}>
                 <nav>
-                    <i class="fa-solid fa-times" onClick={() => setOpenMenu(false)}></i>
+                    <i className="fa-solid fa-times" onClick={() => setOpenMenu(false)}></i>
                     <ul>
                         <li><a href="#presentation" onClick={() => setOpenMenu(false)}>Accueil</a></li>
                         <li><a href="#about" onClick={() => setOpenMenu(false)}>À propos</a></li>

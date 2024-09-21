@@ -8,14 +8,14 @@ const Footer = () => {
                 <h3>Amine Bensaoucha © 2024. Tous droits réservés.</h3>
                 <div className="social-footer">
                     <a href="https://www.linkedin.com/in/amine-b-117010225/" target="_blank" rel="noopener noreferrer" aria-label="Lien vers LinkedIn">
-                        <i class="fa-brands fa-linkedin"></i>
+                        <i className="fa-brands fa-linkedin"></i>
                     </a>
                     <a href="https://github.com/AmineBDev" target="_blank" rel="noopener noreferrer" aria-label="Lien vers GitHub">
-                        <i class="fa-brands fa-github"></i>
+                        <i className="fa-brands fa-github"></i>
                     </a>
-                    <a href="mailto:bensaoucha84@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Envoyer un email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="mailto:bensaoucha84@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Envoyer un email"><i className="fa-solid fa-envelope"></i></a>
                 </div>
-                <i class="fa-solid fa-circle-chevron-up" onClick={() => window.scrollTo(0, 0)}></i>
+                <i className="fa-solid fa-circle-chevron-up" onClick={() => window.scrollTo(0, 0)}></i>
             </div>
         </footer>
     );

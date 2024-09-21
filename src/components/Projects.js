@@ -32,7 +32,7 @@ const Projects = () => {
                 <h3>MES PROJETS</h3>
                 <h2>Chaque projet est une création unique en développement 🧩</h2>
                 {loading ? <div className="loading-project">
-                    <i class="fa-solid fa-spinner fa-spin-pulse"></i>
+                    <i className="fa-solid fa-spinner fa-spin-pulse"></i>
                 </div> :
                     data.slice(0, 3)
                         .map((projet) => (
@@ -50,8 +50,8 @@ const Projects = () => {
                                         ))}
                                     </ul>
                                     <ul>
-                                        <li><a href={projet.git} target="_blank" rel="noopener noreferrer">Code <span><i class="fa-brands fa-github"></i></span></a></li>
-                                        <li><a href={projet.link} target="_blank" rel="noopener noreferrer">Live Demo <span><i class="fa-solid fa-arrow-up-right-from-square"></i></span></a></li>
+                                        <li><a href={projet.git} target="_blank" rel="noopener noreferrer">Code <span><i className="fa-brands fa-github"></i></span></a></li>
+                                        <li><a href={projet.link} target="_blank" rel="noopener noreferrer">Live Demo <span><i className="fa-solid fa-arrow-up-right-from-square"></i></span></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -87,8 +87,8 @@ const Projects = () => {
                                                 ))}
                                             </ul>
                                             <ul>
-                                                <li><a href={projet.git} target="_blank" rel="noopener noreferrer">Code <span><i class="fa-brands fa-github"></i></span></a></li>
-                                                <li><a href={projet.link} target="_blank" rel="noopener noreferrer">Live Demo <span><i class="fa-solid fa-arrow-up-right-from-square"></i></span></a></li>
+                                                <li><a href={projet.git} target="_blank" rel="noopener noreferrer">Code <span><i className="fa-brands fa-github"></i></span></a></li>
+                                                <li><a href={projet.link} target="_blank" rel="noopener noreferrer">Live Demo <span><i className="fa-solid fa-arrow-up-right-from-square"></i></span></a></li>
                                             </ul>
                                         </div>
                                     </div>
