@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-// import happymen from '../assets/img/hero-1.png'
 
 const Presentation = () => {
     const [currentText, setCurrentText] = useState('');

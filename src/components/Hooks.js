@@ -1,5 +1,4 @@
 import React from 'react';
-// import notion from '../assets/img/Notion-logo.svg'
 import CustomSlider from './CustomSlider';
 
 const Hooks = () => {
