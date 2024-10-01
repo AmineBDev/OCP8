@@ -8,7 +8,7 @@ const Header = () => {
         const handleScroll = () => {
             const header = document.getElementById("header");
 
-            if (window.scrollY > 20) {
+            if (window.scrollY > 150) {
                 header.classList.add("active");
             } else {
                 header.classList.remove("active");
